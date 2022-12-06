@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">SriwijayaNews</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tempat Healing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tempat Makan Enak</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Kategori
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Wisata</a></li>
+                            <li><a class="dropdown-item" href="#">Makanan&Minuman</a></li>
+                            <li><a class="dropdown-item" href="#">Olahraga</a></li>
+                            <li><a class="dropdown-item" href="#">Kesehatan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="w-25 ms-auto" role="search">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="btn btn-outline-secondary d-flex align-items-center w-100 pe-5">
+                        <i class="fa-solid fa-magnifying-glass mx-2"></i>
+                        <span>Pencarian ...</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="container">
+        <div class="border mx-4 p-5">
+            <div class="row">
+                <div class="col-12 col-lg-10 col-md-12 col-sm-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                        <img src="https://cdn-asset.jawapos.com/wp-content/uploads/2022/12/000_32WP37L-560x373.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                        <div class="bg-dark py-5 px-3 text-light">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                        <img src="https://cdn-asset.jawapos.com/wp-content/uploads/2022/12/000_32WP37L-560x373.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                        <div class="bg-dark py-5 px-3 text-light">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                        <img src="https://cdn-asset.jawapos.com/wp-content/uploads/2022/12/000_32WP37L-560x373.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                        <div class="bg-dark py-5 px-3 text-light">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon shadow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon shadow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 d-none d-lg-block">
+                    <h3>Trending Post</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Content for list item
+                          </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Content for list item
+                          </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Content for list item
+                          </div>
+                        </li>
+                      </ol>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="px-3">
+        <div class="row">
+            <div class="col-6">
+                <div id="carouselExampleCaptions" class="carousel slide mt-3" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+            
+                            <img src="https://www.gotravelly.com/blog/wp-content/uploads/2018/04/dago-dream-park.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>9 Tempat Wisata Dago Bandung Wajib Kesini Recommended</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.gotravelly.com/blog/wp-content/uploads/2018/03/makanan-khas-daerah-mie-aceh.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Macam-macam Makanan Khas Daerah di Indonesia Dan Asalnya</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.gotravelly.com/blog/wp-content/uploads/2018/03/makanan-khas-lampung-seruit.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>20 Makanan Khas Lampung Terkenal Paling Enak Dan Bikin Kangen!</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bg-dark text-light mt-3 p-4">
+                    <h3 class="display-6">SriwijayaNews menyajikan berita seputar gaya hidup sehat, rekomendasi wisata kuliner, dan olahraga.</h3>
+                    <p>Dibuat untuk keperluan penyelesaian tugas UAS.</p>
+                </div>
+                <div class="bg-dark text-light mt-3 p-3">
+                    <p class="fs-5">Membuat website berita dengan menggunakan framework bootstrap dan fontawesome.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-2 my-4">
+        <div class="row">
+            <div class="col-2">
+                <div class="rounded-pill w-100 bg-dark text-light p-2 mb-3">Trending Topik</div>
+                <ul class="list-group" style="font-size: .9em">
+                    <li class="list-group-item">#IndonesiaFIFAWorldCup</li>
+                    <li class="list-group-item">#FerdiSambo</li>
+                    <li class="list-group-item">#Kanjuruan</li>
+                    <li class="list-group-item">#UsutTuntasKanjuruan</li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <div class="rounded-pill w-100 bg-dark text-light p-2 mb-3">Berita Baru</div>
+                <div class="container">
+                    <div class="list-group">
+                        <a href="https://www.gotravelly.com/blog/7-wisata-anak-di-blitar/" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div style="width: 150px;height:150px;background-image:url(https://www.gotravelly.com/blog/wp-content/uploads/2022/11/blitar-park-1.jpg);background-repeat: no-repeat;background-color: black;background-position: center;background-size: 500px;"></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">7 Wisata Anak di Blitar, Buat Keluarga Bahagia</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Blitar merupakan salah satu daerah di Jawa Timur yang dikenal menawarkan cukup banyak pilihan tempat wisata. Jika ingin menghabiskan waktu berlibur bersama keluarga di Blitar...</p>
+                                    <small>Penulis: Fida</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.gotravelly.com/blog/8-restoran-murah-di-qatar-sajian-lezat-yang-ramah-kantong/" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div style="width: 150px;height:150px;background-image:url(https://www.gotravelly.com/blog/wp-content/uploads/2022/11/fudo-restaurant-qatar.jpeg);background-repeat: no-repeat;background-color: black;background-position: center;background-size: 500px;"></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">8 Restoran Murah di Qatar, Sajian Lezat yang Ramah Kantong</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Mengenal negara yang menjadi tuan rumah dari piala dunia 2022 kali ini, mungin tidak terlepas dari kemewahannya saja. Tapi ternyata di sana juga ada restoran murah di Qatar loh...</p>
+                                    <small>Penulis: Jehan</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.gotravelly.com/blog/7-wisata-di-tabalong/" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div style="width: 150px;height:150px;background-image:url(https://www.gotravelly.com/blog/wp-content/uploads/2022/11/danau-cermin.jpg);background-repeat: no-repeat;background-color: black;background-position: center;background-size: 500px;"></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">8 Restoran Murah di Qatar, Sajian Lezat yang Ramah Kantong</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Tabalong merupakan sebutan bagi salah satu kabupaten di Provinsi Kalimantan Selatan. Daerah yang satu ini dikenal menyuguhkan banyaknya destinasi wisata. Oleh karena itu, tidak heran jika Tabalong...</p>
+                                    <small>Penulis: Fida</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-center my-2">
+                        <a href="https://www.gotravelly.com/blog/" class="btn w-50 btn-sm btn-outline-dark rounded-pill">Muat Lebih</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="row">
+            <div class="col-6 px-3 py-2">
+                <div class="border px-3 py-2">
+                    <div class="rounded-pill w-100 bg-dark text-light p-2 mb-3 d-flex justify-content-between align-items-center px-4">Rekomendasi Wisata <a href="https://www.gotravelly.com/id/review" class="btn btn-outline-light rounded-pill btn-sm">Selengkapnya</a></div>
+
+                    <div class="row align-items-baseline">
+                        <div class="col-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.gotravelly.com/assets/img/review/cover/353_e4a063677ba0873cc74c08f2aacc6cba.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Amazing Batu Screet Zoo, Kebun Binatang Modern Dengan
+                                        Banyak Wahana di kota Batu</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">#WisataAsik #Malang #Kanjuruan</h6>
+                                    <p class="card-text">Kebun Binatang dengan konsep modern dengan beragam binatang dan
+                                        wahana di dalamnya. Nah mau tau di dalam Batu Secret Zoo ada apa saja?</p>
+                                    <a href="https://www.gotravelly.com/id/review/detail/143327232-the_amazing_batu_screet_zoo_kebun_binatang_modern_dengan_banyak_wahana_di_kota_batu"
+                                        class="card-link">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.gotravelly.com/assets/img/review/cover/high_res/364_dc1f4ab6ee897b0f3cc77073bd2303ef.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cave Tubing, Selusur Goa Pindul dengan Cara Unik dan Seru!</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">#CaveItuGua #Yogyakarta #Yukyuk</h6>
+                                    <p class="card-text">Goa Pindul menjadi tujuan wisata tepat yang bisa kamu datangi saat berlibur ke Yogyakarta. Bagaimana keseruannya? Simak review di bawah ini yaa!</p>
+                                    <a href="https://www.gotravelly.com/id/review/detail/143982592-cave_tubing_selusur_goa_pindul_dengan_cara_unik_dan_seru"
+                                        class="card-link">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 px-3 py-2">
+                <div class="border px-3 py-2">
+                    <div class="rounded-pill w-100 bg-dark text-light p-2 mb-3 d-flex justify-content-between align-items-center px-4">Rekomendasi Kuliner <a href="https://www.gotravelly.com/id/culinary" class="btn btn-outline-light rounded-pill btn-sm">Selengkapnya</a></div>
+                    <div class="row align-items-baseline">
+                        <div class="col-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.gotravelly.com/assets/img/culinary/cover/3088_7f956f5173fd16a632f57a2f3a60fc27.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Patdua Eatery, Sudut Nyaman dengan Menu Enak yang Siap Menemanimu</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">#Mahasiswa #Surabaya</h6>
+                                    <p class="card-text">Klu untuk tempat ini: tempat nyaman dan menu enak! Pas banget dijadiin space nongkrong rame-rame atau nugas sendirian setiap saat.</p>
+                                    <a href="https://www.gotravelly.com/id/culinary/detail/169934848-patdua_eatery_sudut_nyaman_dengan_menu_enak_yang_siap_menemanimu"
+                                        class="card-link">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.gotravelly.com/assets/img/culinary/cover/243_a0ec45cac03ba2c94d60a4b848e72ae5.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Makan Ramen dengan Suasana Khas Jepang di Sendai Ramen Madiun</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">#TundaDiet #Halal #MadiunNinggalJanji</h6>
+                                    <p class="card-text">Nyobain ramen baru yang hits banget di Kota Madiun. Katanya saat makan disini kalian akan merasakan vibes seperti di Jepang langsung!</p>
+                                    <a href="https://www.gotravelly.com/id/review/detail/143327232-the_amazing_batu_screet_zoo_kebun_binatang_modern_dengan_banyak_wahana_di_kota_batu"
+                                        class="card-link">Kunjungi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-2">
+        <div class="bg-dark border position-sticky bottom-0 pb-5 pt-4 px-5 w-100 text-light">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h2 class="display-5"><strong>SriwijayaNews</strong></h2>
+                    <div class="row w-75">
+                        <div class="col-3 col-sm-3">
+                            <span class="fa-brands fa-facebook fa-2x"></span>
+                        </div>
+                        <div class="col-3 col-sm-3">
+                            <span class="fa-brands fa-twitter fa-2x"></span>
+                        </div>
+                        <div class="col-3 col-sm-3">
+                            <span class="fa-brands fa-linkedin fa-2x"></span>
+                        </div>
+                        <div class="col-3 col-sm-3">
+                            <span class="fa-brands fa-tiktok fa-2x"></span>
+                        </div>
+                    </div>
+                    <div class="mt-2 w-50">
+                        <h4>Alamat</h4>
+                        <p>Jl. Masjid Al Gazali, Bukit Lama, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan 30128</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 pt-3">
+                            <h4>Kategori</h4>
+                            <ul style="list-style: none">
+                                <li>Wisata</li>
+                                <li>Makanan&Minuman</li>
+                                <li>Olahraga</li>
+                                <li>Kesehatan</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 pt-3">
+                            <h4>Halaman</h4>
+                            <ul style="list-style: none">
+                                <li>Tentang Kami</li>
+                                <li>Kontak Kami</li>
+                                <li>Blog</li>
+                                <li>Gabung Dengan Kami</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Pencarian</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="border rounded text-muted shadow d-flex align-items-center justify-content-around px-2">
+                        <i class="fa-solid fa-magnifying-glass mx-2"></i>
+                        <input type="text" style="box-shadow: none" class="form-control border-0"
+                            placeholder="Mencari Hal..." autocomplete="off">
+                        <i style="cursor: pointer" class="fa-solid fa-times mx-2"></i>
+                    </div>
+                    <div class="text-center display-6 p-5">Belum Ada Data Pencarian</div>
+                </div>
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
